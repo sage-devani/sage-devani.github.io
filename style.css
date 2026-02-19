@@ -99,11 +99,24 @@
     .green-section p {
      margin-bottom: 15px;
     }
+    .green-section-lab {
+      background: #20b6a0;
+      height: 500px;
+      color:black;
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+    }
+    .green-section-cert p {
+      font-size: 1rem;
+    }
+    
     .green-section-cert {
       background: #20b6a0;
       height: 450px;
       color:black;
       font-size: clamp(1.2rem, 2vw, 1.6rem);
+    }
+    .green-section-cert p {
+      font-size: 1rem;
     }
 
     .parallax {
@@ -112,9 +125,15 @@
       background-position: center;
     }
 
-    .copywr-section {
-      background: #000;
-      font-size: 1rem;
+    #labbox {
+      width: 900px;
+      height: 300px;
+      border-radius: 30px;
+      padding: 25px 25px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: #f4f4f4;
+      text-align: center;
     }
 
     #certbox {
@@ -126,6 +145,11 @@
       margin-bottom: 30px;
       background-color: #f4f4f4;
       text-align: center;
+    }
+
+    .copywr-section {
+      background: #000;
+      font-size: 1rem;
     }
 
     /* BUTTONS */
