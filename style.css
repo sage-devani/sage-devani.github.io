@@ -112,7 +112,7 @@
     
     .green-section-cert {
       background: #20b6a0;
-      height: 550px;
+      height: 570px;
       color:black;
       font-size: clamp(1.2rem, 2vw, 1.6rem);
     }
@@ -148,7 +148,7 @@
 
     #certbox {
       width: 900px;
-      height: 450px;
+      height: 440px;
       border-radius: 30px;
       padding: 25px 25px;
       margin-top: 30px;
