@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Home Lab Site</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">LOGO</div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Home Lab</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="green-section">
+      <p>Hello World</p>
+      <button class="styled-btn" onmouseover="hoverBtn(this)" onmouseout="resetBtn(this)">My Home Lab</button>
+    </section>
+
+    <section class="parallax" style="background-image: url('./images/switch2.png');">
+      Parallax 1
+    </section>
+
+    <section class="green-section">
+      <button class="styled-btn" onmouseover="hoverBtn(this)" onmouseout="resetBtn(this)">Home Lab</button>
+    </section>
+
+    <section class="parallax" style="background-image: url('./images/servers.png');">
+      Parallax 2
+    </section>
+
+    <section class="green-section-cert">
+      <h3>Certifications</h3>
+      <div id="certbox">
+        <img src="images/A+-png.png" height="120px" alt="A+ Logo">
+        <img src="images/Network+-png.png" height="120px" alt="Network+ Logo">
+        <img src="images/Security+-png.png" height="120px" alt="Security+ Logo">
+        <img src="images/Server+-png.png" height="120px" alt="Server+ Logo">
+        <img src="images/SecurityX-png.png" height="120px" alt="SecurityX Logo">
+        <img src="images/CloudEssentials+-png.png" height="120px" alt="Cloud Essentials+ Logo">
+        <br /><br />
+        <p>Verify at Credly.com</p>
+      </div>
+    <!--      
+      <button class="styled-btn" onmouseover="hoverBtn(this)" onmouseout="resetBtn(this)">Contact</button>
+    -->
+    </section>
+
+    <section class="copywr-section">
+      Copywrite 2026 - SDevani.com - All Rights Reserved
+    </section>
+  </main>
+
+  <script>
+    // MENU TOGGLE
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    // BUTTON HOVER EFFECT
+    function hoverBtn(btn) {
+      btn.style.backgroundColor = "#fff";
+      btn.style.color = "#000";
+      btn.style.transform = "scale(1.1)";
+    }
+
+    function resetBtn(btn) {
+      btn.style.backgroundColor = "transparent";
+      btn.style.color = "#fff";
+      btn.style.transform = "scale(1)";
+    }
+  </script>
+</body>
+</html>
